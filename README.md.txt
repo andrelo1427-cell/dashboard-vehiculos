@@ -15,7 +15,7 @@ Determinar si variables como caballos de fuerza y número de cilindros influyen 
 - R² ≈ 0.50 → relación moderada
 - Accuracy ≈ 0.88 → alta capacidad de clasificación
 
-## ▶️ Cómo ejecutar
+
 ```bash
 pip install -r requirements.txt
 python app.py
