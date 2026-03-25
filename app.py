@@ -61,6 +61,8 @@ cm = confusion_matrix(y_test2, y_pred2)
 # ======================
 app = dash.Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div(style={'backgroundColor': '#f4f6f7', 'padding': '20px'}, children=[
 
     # ======================
@@ -193,6 +195,6 @@ def actualizar_grafico(cilindros):
 import os
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8050))
-    app.run_server(host="0.0.0.0", port=port)
+    app.run_server(debug=False)
+
 
