@@ -67,6 +67,9 @@ cm = confusion_matrix(y_test2, y_pred2)
 # ======================
 app = dash.Dash(__name__)
 
+server = app.server
+
+
 app.layout = html.Div(style={'backgroundColor': '#ecf0f1', 'padding': '20px'}, children=[
 
     html.H1("🚗 Dashboard Avanzado de Vehículos", style={'textAlign': 'center'}),
